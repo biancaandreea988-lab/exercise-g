@@ -15,8 +15,8 @@ quoteRouter.get("/quote", async (_req, res) => {
         // const s3data = await s3Client.send(command)
         // const data = await data.Body?.transformToString()
 
-        const filePath = path.join(__dirname, "../../resources/quotes.ts");
-        const data = fs.readFileSync(filePath, "utf-8");
+        const filePath = path.join(__dirname, "../../resources/quotes.ts")
+        const data = fs.readFileSync(filePath, "utf-8")
 
         if (!data) {
             return res.status(500).json({ error: "Empty response from S3" })

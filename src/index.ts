@@ -1,8 +1,8 @@
-import express from "express";
+import express from "express"
 import healthRouter from "./routes/health"
-import quoteRouter from "./routes/quote";
+import quoteRouter from "./routes/quote"
 
-import { config } from "dotenv";
+import { config } from "dotenv"
 config()
 
 const app = express()
